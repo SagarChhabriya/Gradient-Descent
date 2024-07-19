@@ -1,9 +1,31 @@
 # Gradient-Descent
 
+# Table of Contents
+
+1. [Introduction](#introduction)
+2. [Why Gradient Descent](#why-gradient-descent)
+3. [The Intuition Behind Gradient Descent](#the-intuition-behind-gradient-descent)
+4. [Maths Behind Gradient Descent](#maths-behind-gradient-descent)
+    - [Step-1: Start with a Random b](#step-1-start-with-a-random-b)
+    - [Step-2: Run the Iterations](#step-2-run-the-iterations)
+5. [Implementing Gradient Descent with One Variable](#making-hands-dirty-by-implementing-gradient-descent-with-1-variable)
+    - [Get the Value of m with OLS](#get-the-value-of-m-with-ols)
+    - [Iteration-1](#iteration-1)
+    - [Iteration-2](#iteration-2)
+6. [Gradient Descent for Two Variables](#gradient-descent-for-2-variables)
+    - [Step-1: Initialize the Random Value of m and b](#step-1-initialize-the-random-value-of-m-and-b)
+    - [Step-2: Initialize the Number of Epochs and Learning Rate](#step-2-initialize-the-number-of-epochs-and-learning-rate)
+    - [Step-3: Start Calculating the Slope and Intercept in Iterations](#step-3-start-calculating-the-slope-and-intercept-in-iterations)
+7. [Effect of Learning Rate](#effect-of-learning-rate)
+8. [Effect of Loss Function](#effect-of-loss-function)
+9. [Effect of Data](#effect-of-data)
+10. [End Note](#end-note)
+
+
 # What is Gradient Descent?
 Gradient Descent is a first-order optimization technique used to find the local minimum or optimize the loss function. It is also known as the parameter optimization technique.<br><br>
 
-**Why Gradient Descent**?<br>
+## Why Gradient Descent?<br>
 It is easy to find the value of slope and intercept using a closed-form solution But when you work in Multidimensional data then the technique is so costly and takes a lot of time Thus it fails here. So, the new technique came as Gradient Descent which finds the minimum very fastly.<br><br>
 
 Gradient descent is not only up to linear regression but it is an algorithm that can be applied on any machine learning part including linear regression, logistic regression, and it is the complete backbone of deep learning.<br><br>
@@ -120,7 +142,8 @@ print(b)
 
 When we calculate the learning rate multiplied by slope is known as step size and to calculate the new intercept we subtract step size from the old intercept and that’s what we have done. And the new intercept is 20.9 hence directly from 0 we have reached 20.9.<br><br>
 
-#### Iteration – 2
+#### Iteration-2
+
 Now again we will calculate the slope at intercept 20 and you will see it will move very near to the required intercept of 26.15. The code is the same as above.<br><br>
 
 ```python
@@ -200,5 +223,5 @@ One is the learning rate whose effect we have seen and the next thing which affe
 ### Effect Of Data
 Data affects the running time of Gradient Descent. If all the features in the data are at a common scale then it converges very fast and the contour plot is exactly circular. But If the feature scale is very different then the convergence time is too high And you will get a flatter contour.<br><br>
 
-### EndNote
+### End Note
 We have learned Gradient descent from ground level and build it with one as well as with two variables. The beauty of it is, it gets you at the correct point whether you start with any weird point. Gradient Descent is used in most Machine learning parts including Linear and Logistic Regression, PCA, ensemble techniques.<br><br>
