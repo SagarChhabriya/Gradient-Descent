@@ -20,7 +20,7 @@
 8. [Effect of Loss Function](#effect-of-loss-function)
 9. [Effect of Data](#effect-of-data)
 10. [End Note](#end-note)
-
+11. [Types of Gradient Descent](#types-of-gradient-descent)
 
 # What is Gradient Descent?
 Gradient Descent is a first-order optimization technique used to find the local minimum or optimize the loss function. It is also known as the parameter optimization technique.<br><br>
@@ -225,3 +225,8 @@ Data affects the running time of Gradient Descent. If all the features in the da
 
 ### End Note
 We have learned Gradient descent from ground level and build it with one as well as with two variables. The beauty of it is, it gets you at the correct point whether you start with any weird point. Gradient Descent is used in most Machine learning parts including Linear and Logistic Regression, PCA, ensemble techniques.<br><br>
+
+
+# Types of Gradient Descent
+![image](https://github.com/user-attachments/assets/552e3d0c-b45b-439a-9350-5bcfcaafd559)
+
